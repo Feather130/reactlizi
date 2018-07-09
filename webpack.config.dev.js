@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   output: {
     path: __dirname + '/build',
     filename: 'index.js'
@@ -55,7 +55,7 @@ module.exports = {
             test: /\.(le|c)ss$/,
             use: [
               MiniCssExtractPlugin.loader,
-              'css-loader?modules',
+              'css-loader',
               {
                 loader: 'postcss-loader',
                 options: {
