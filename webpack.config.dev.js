@@ -25,7 +25,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'lizi',
       template: './src/index.html',
-      favicon: './src/imgs/favicon.ico',
+      favicon: './src/assets/favicon.ico',
     }),
   ],
   module: {
