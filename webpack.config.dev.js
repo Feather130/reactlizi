@@ -15,6 +15,12 @@ module.exports = {
     contentBase: path.join(__dirname, 'build'),
     compress: true,
     port: 8848,
+    proxy: {
+      '/': {
+        target: 'http://47.92.0.168:8000',
+        changeOrigin: true,
+      },
+    },
     open: true,
   },
   plugins: [
